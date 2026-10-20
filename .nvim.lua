@@ -17,14 +17,14 @@ local test = {
                 return {
                         cmd = { "dotnet", "test" },
                         name = "test",
-                        }
-                end,
-                desc = "Test",
+                }
+        end,
+        desc = "Test",
 }
 
 local actions = {
-        { key = "b", task = build },
-        { key = "t", task = test }
+        { key = "l", task = build },
+        { key = "t", task = test },
 }
 
 project_actions.register(actions)
